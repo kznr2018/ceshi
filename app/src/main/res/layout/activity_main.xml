@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:padding="10dp">
 
     <TextView
+        android:id="@+id/tx_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello  曹尼玛啊!"
@@ -15,4 +17,14 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/btn_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EditText"
+        android:textAllCaps="false"
+        android:layout_below="@id/tx_1"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
