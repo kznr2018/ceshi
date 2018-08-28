@@ -27,4 +27,14 @@
         android:layout_marginTop="15dp"
         android:textSize="20sp"/>
 
+    <Button
+        android:id="@+id/btn_radiobutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RadioButton"
+        android:textAllCaps="false"
+        android:layout_below="@id/btn_edittext"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"/>
+
 </RelativeLayout>

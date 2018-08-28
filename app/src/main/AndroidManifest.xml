@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EditTextActivity"></activity>
+        <activity android:name=".EditTextActivity" />
+        <activity android:name=".RadioButtonActivity"></activity>
     </application>
 
 </manifest>

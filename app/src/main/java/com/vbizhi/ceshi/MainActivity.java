@@ -9,6 +9,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button mBtnEditText;
+    private Button mBtnRadioButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,5 +25,29 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        mBtnRadioButton = findViewById(R.id.btn_radiobutton);
+    }
+
+    private class Onclick implements View.OnClickListener{
+
+        @Override
+        public void onClick(View view) {
+            Intent intent = null;
+            switch (view.getId()){
+                case R.id.tx_1:
+                    //跳转到EditText页面
+                    intent = new Intent(MainActivity.this,EditTextActivity.class);
+                    break;
+                case R.id.btn_edittext:
+                    //跳转到EditText页面
+                    intent = new Intent(MainActivity.this,EditTextActivity.class);
+                    break;
+                case R.id.btn_radiobutton:
+                    //跳转到EditText页面
+                    intent = new Intent(MainActivity.this,RadioButtonActivity.class);
+                    break;
+            }
+            startActivity(intent);
+        }
     }
 }
