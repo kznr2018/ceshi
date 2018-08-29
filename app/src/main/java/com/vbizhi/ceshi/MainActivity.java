@@ -17,15 +17,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mBtnEditText = findViewById(R.id.btn_edittext);
-        mBtnEditText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //跳转到EditText页面
-                Intent intent = new Intent(MainActivity.this,EditTextActivity.class);
-                startActivity(intent);
-            }
-        });
         mBtnRadioButton = findViewById(R.id.btn_radiobutton);
+        setListeners();
+    }
+
+    private void setListeners(){
+        Onclick onclick = new Onclick();
+        mBtnEditText.setOnClickListener(onclick);
+        mBtnRadioButton.setOnClickListener(onclick);
     }
 
     private class Onclick implements View.OnClickListener{
