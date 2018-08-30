@@ -38,19 +38,26 @@
 
         <RadioButton
             android:id="@+id/rb_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
             android:text="男"
+            android:gravity="center"
+            android:button="@null"
             android:checked="true"
             android:textSize="20sp"
-            android:textColor="#d68b8b"/>
+            android:textColor="#d68b8b"
+            android:background="@drawable/selector_orange"/>
 
         <RadioButton
             android:id="@+id/rb_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
             android:text="女"
+            android:gravity="center"
+            android:button="@null"
             android:textSize="20sp"
-            android:textColor="#d68b8b"/>
+            android:textColor="#d68b8b"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/selector_orange"/>
     </RadioGroup>
 </RelativeLayout>
