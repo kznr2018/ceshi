@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:orientation="vertical"
     android:padding="10dp">
 
     <TextView
@@ -22,19 +22,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="EditText"
-        android:textAllCaps="false"
-        android:layout_below="@id/tx_1"
-        android:layout_marginTop="15dp"
-        android:textSize="20sp"/>
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/btn_radiobutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="RadioButton"
-        android:textAllCaps="false"
-        android:layout_below="@id/btn_edittext"
-        android:layout_marginTop="5dp"
-        android:textSize="20sp"/>
+        android:textAllCaps="false"/>
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/btn_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ImageView"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
