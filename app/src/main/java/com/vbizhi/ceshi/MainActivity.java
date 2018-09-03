@@ -6,12 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.vbizhi.ceshi.listview.ListViewActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button mBtnEditText;
     private Button mBtnRadioButton;
     private Button mBtnCheckBox;
     private Button mBtnImageView;
+    private Button mBtnListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnRadioButton = findViewById(R.id.btn_radiobutton);
         mBtnCheckBox = findViewById(R.id.btn_checkbox);
         mBtnImageView = findViewById(R.id.btn_imageview);
+        mBtnListView = findViewById(R.id.btn_listview);
         setListeners();
     }
 
@@ -31,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnRadioButton.setOnClickListener(onclick);
         mBtnCheckBox.setOnClickListener(onclick);
         mBtnImageView.setOnClickListener(onclick);
+        mBtnListView.setOnClickListener(onclick);
     }
 
     private class Onclick implements View.OnClickListener{
@@ -58,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_imageview:
                     //跳转到ImageView页面
                     intent = new Intent(MainActivity.this,ImageViewActivity.class);
+                    break;
+                case R.id.btn_listview:
+                    //跳转到ListView页面
+                    intent = new Intent(MainActivity.this,ListViewActivity.class);
                     break;
             }
             startActivity(intent);

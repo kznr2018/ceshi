@@ -38,7 +38,6 @@
         android:layout_width="100dp"
         android:layout_height="150dp"
         android:background="#000"
-        android:src="@drawable/tupian1024_500"
         android:scaleType="centerCrop"
         android:layout_below="@id/iv_1"
         android:layout_marginTop="5dp"
