@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.vbizhi.ceshi.gridview.GridViewActivity;
 import com.vbizhi.ceshi.listview.ListViewActivity;
+import com.vbizhi.ceshi.recyclerview.RecyclerViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnImageView;
     private Button mBtnListView;
     private Button mBtnGridView;
+    private Button mBtnRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnImageView = findViewById(R.id.btn_imageview);
         mBtnListView = findViewById(R.id.btn_listview);
         mBtnGridView = findViewById(R.id.btn_gridview);
+        mBtnRecyclerView =findViewById(R.id.btn_recyclerview);
         setListeners();
     }
 
@@ -40,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnImageView.setOnClickListener(onclick);
         mBtnListView.setOnClickListener(onclick);
         mBtnGridView.setOnClickListener(onclick);
+        mBtnRecyclerView.setOnClickListener(onclick);
     }
 
     private class Onclick implements View.OnClickListener{
@@ -75,6 +79,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_gridview:
                     //跳转到ListView页面
                     intent = new Intent(MainActivity.this,GridViewActivity.class);
+                    break;
+                case R.id.btn_recyclerview:
+                    //跳转到RecyclerView页面
+                    intent = new Intent(MainActivity.this,RecyclerViewActivity.class);
                     break;
             }
             startActivity(intent);
