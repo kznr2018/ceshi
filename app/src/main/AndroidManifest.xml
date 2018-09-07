@@ -25,7 +25,8 @@
         <activity android:name=".listview.ListViewActivity" />
         <activity android:name=".gridview.GridViewActivity" />
         <activity android:name=".recyclerview.RecyclerViewActivity" />
-        <activity android:name=".recyclerview.LinearRecyclerViewActivity"></activity>
+        <activity android:name=".recyclerview.LinearRecyclerViewActivity" />
+        <activity android:name=".WebViewActivity"></activity>
     </application>
 
 </manifest>
